@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Livro {
+            constructor(titulo, autor, ano) {
+                this.titulo = titulo;
+                this.autor = autor;
+                this.ano = ano;
+            }
+
+            detalhes() {
+                console.log(`Livro: ${this.titulo} | Autor: ${this.autor} | Ano: ${this.ano}`);
+            }
+        }
+
+        const livro1 = new Livro('Grande Sertão: Veredas', 'João Guimarães Rosa', 1956);
+        const livro2 = new Livro('Capitães de Areira', 'Jorge Amado', 1937);
+
+        livro1.detalhes();
+        livro2.detalhes();
+
+    </script>
+</body>
+</html>
