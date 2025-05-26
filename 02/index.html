@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora Web</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="calculadora">
+      <input type="text" class="display" id="display" disabled />
+
+      <div class="botoes">
+        <button class="btn numero" data-value="7">7</button>
+        <button class="btn numero" data-value="8">8</button>
+        <button class="btn numero" data-value="9">9</button>
+        <button class="btn operador" data-value="/">÷</button>
+
+        <button class="btn numero" data-value="4">4</button>
+        <button class="btn numero" data-value="5">5</button>
+        <button class="btn numero" data-value="6">6</button>
+        <button class="btn operador" data-value="*">×</button>
+
+        <button class="btn numero" data-value="1">1</button>
+        <button class="btn numero" data-value="2">2</button>
+        <button class="btn numero" data-value="3">3</button>
+        <button class="btn operador" data-value="-">−</button>
+
+        <button class="btn limpar" id="limpar" title="Limpar">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+        <button class="btn numero" data-value="0">0</button>
+        <button class="btn igual" id="igual">=</button>
+        <button class="btn operador" data-value="+">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
